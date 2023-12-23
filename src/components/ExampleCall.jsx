@@ -5,7 +5,7 @@ const ExampleCall = () => {
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    const API_KEY = "1c9fad3c651bc8b79ce4eaf4eb6c9b43";
+    const API_KEY = ""; // Todo: Store key in a way that doesnt get exposed in the public repo
     const city = "Girona";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
     // Please read https://openweathermap.org/current#name
